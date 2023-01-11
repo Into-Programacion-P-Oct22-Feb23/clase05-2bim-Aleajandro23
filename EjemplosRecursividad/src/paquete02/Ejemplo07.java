@@ -7,7 +7,7 @@ package paquete02;
 public class Ejemplo07 {
 
     public static void main(String[] args) {
-        int[] valores = {2,3,4,5,6,7,8};
+        int[] valores = {2, 3, 4, 5, 6, 7, 8};
         int[] potencias = {2, 3};
         // Por cada posición del arreglo valores
         // obtener su potencia, en función de los valores
@@ -19,25 +19,24 @@ public class Ejemplo07 {
         // 2 elevado a la potencia 3 (cubo)
         for (int i = 0; i < potencias.length; i++) {
             for (int j = 0; j < valores.length; j++) {
+
+                //System.out.printf("Obtener Potencia: %d\n",obtenerPotencia(potencias[i],valores[j]));
                 
-            
-            //System.out.printf("Obtener Potencia: %d\n",obtenerPotencia(potencias[i]
-            //        ,valores[j]));
-                System.out.printf("%s elevado a la potencia %s : %s\n"
-                    , potencias[i], valores[i],obtenerPotencia(potencias[i]
-                    ,valores[j]) );
-                
+                System.out.printf("%s elevado a la potencia %s : %s\n",
+                         potencias[i], valores[i], obtenerPotencia(potencias[i],
+                                 valores[j]));
+
             }
-          // System.out.println("\nBase elevada al cubo");
+            // System.out.println("\nBase elevada al cubo");
         }
     }
 
     public static int obtenerPotencia(int base, int exponente) {
-        
+
         if (exponente == 1) {
             return base;
-        } else{
-            
+        } else {
+
             return base * obtenerPotencia(base, exponente - 1);
         }
     }
