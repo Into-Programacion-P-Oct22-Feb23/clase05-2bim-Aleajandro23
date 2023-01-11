@@ -12,7 +12,7 @@ public class Ejemplo04 {
                                      // 120
     }
 
-    public static double factorial(double numero) { // 5 
+    public static double factorial(double numero) { // 5 funcion
                                                     // 4
                                                     // 3
                                                     // 2

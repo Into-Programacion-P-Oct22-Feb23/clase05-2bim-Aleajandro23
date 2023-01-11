@@ -12,9 +12,9 @@ public class Ejemplo02 {
         System.out.printf("Números del %d al 1\n", numero);
         imprimirNumeros(numero);
     }
-
+                                          // 7
     public static void imprimirNumeros(int numero) {
-        
+         
         System.out.printf("El número es: %d\n", numero);
         if (numero > 1) {  // se busca una condición que se 
                            // acerque al caso base
