@@ -17,7 +17,19 @@ public class Ejemplo07 {
         // se debería presentar el resultado de
         // 2 elevado a la potencia 2 (cuadrado)
         // 2 elevado a la potencia 3 (cubo)
-        
+        for (int i = 0; i < potencias.length; i++) {
+            for (int j = 0; j < valores.length; j++) {
+                
+            
+            //System.out.printf("Obtener Potencia: %d\n",obtenerPotencia(potencias[i]
+            //        ,valores[j]));
+                System.out.printf("%s elevado a la potencia %s : %s\n"
+                    , potencias[i], valores[i],obtenerPotencia(potencias[i]
+                    ,valores[j]) );
+                
+            }
+          // System.out.println("\nBase elevada al cubo");
+        }
     }
 
     public static int obtenerPotencia(int base, int exponente) {

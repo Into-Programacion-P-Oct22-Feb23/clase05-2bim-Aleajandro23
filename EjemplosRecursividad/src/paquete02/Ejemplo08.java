@@ -12,6 +12,7 @@ public class Ejemplo08 {
         // Sumar los valores del arreglo, mediante la función misterio
         
     }
+    
 
     public static int misterio(int[] arreglo, int tamanio) {
 
