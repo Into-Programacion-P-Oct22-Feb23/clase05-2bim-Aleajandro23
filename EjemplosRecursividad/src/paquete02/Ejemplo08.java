@@ -1,45 +1,35 @@
 /*
  * Factorial sin recursividad
  * 5! = 5 * 4 * 3 * 2 * 1
+
  */
+// Ingresar por teclado el tamaño de un arreglo
+// Ingresar por teclado los valores enteros del arreglo
+// Sumar los valores del arreglo, mediante la función misterio
 package paquete02;
+
 import java.util.Scanner;
+
 public class Ejemplo08 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        // Ingresar por teclado el tamaño de un arreglo
-        // Ingresar por teclado los valores enteros del arreglo
-        // Sumar los valores del arreglo, mediante la función misterio
-        
-        
-        int[] arreglo;
-        int[] tamanio;
+
+        int[] tamanio;  // limite
         int opcion;
-        int valores;
+
         System.out.println("Ingrese el tamaño del arreglo");
         opcion = entrada.nextInt();
-        
-        tamanio = new int [opcion];
-        
+
+        tamanio = new int[opcion];
+
         for (int i = 0; i < tamanio.length; i++) {
-            System.out.println("Ingrese los valores del arreglo");
-            int dato = entrada.nextInt();
-            arreglo[i] = dato;
-            
+            System.out.printf("Ingrese el valor en la posicion [%d]:\n", i);
+            tamanio[i] = entrada.nextInt();
+
         }
-        int resultado;
-        resultado = misterio(arreglo, opcion);
-        
-        System.out.println("");
-  
-        
-        System.out.println("El resulatado es:");
-        
-        
-      
+        System.out.printf("El resultado de la suma es: %d\n", misterio(tamanio, tamanio.length));
     }
-    
 
     public static int misterio(int[] arreglo, int tamanio) {
 
